@@ -1,0 +1,11 @@
+{
+	"host": "peertome.net",
+	"port": 9000,
+	"path": "/signaling",
+	"statsInterval": 10000,
+
+	"ipLimit": 10,
+	"concurrentLimit": null,
+	"key": "",
+    "ssl": false
+}

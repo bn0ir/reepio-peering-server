@@ -1,0 +1,26 @@
+{
+  "name": "P2PData",
+  "version": "0.0.0-4",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "peer": "~0.2.5",
+    "socket.io": "~0.9.17",
+    "q": "^1.0.1",
+    "winston": "^0.7.3",
+    "cli": "^0.6.3",
+    "daemon": "^1.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+  },
+  "subdomain": "weteef-webrtc",
+  "engines": {
+    "node": "0.10.x"
+  }
+}
