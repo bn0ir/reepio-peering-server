@@ -1,5 +1,5 @@
 {
-  "name": "P2PData",
+  "name": "reepio-peering-server",
   "version": "0.0.0-4",
   "description": "",
   "main": "server.js",
@@ -19,7 +19,7 @@
   "license": "ISC",
   "devDependencies": {
   },
-  "subdomain": "weteef-webrtc",
+  "subdomain": "kodekraftwerk-webrtc",
   "engines": {
     "node": "0.10.x"
   }
