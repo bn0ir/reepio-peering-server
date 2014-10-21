@@ -1,11 +1,11 @@
 {
-	"host": "peertome.net",
+	"host": "127.0.0.1",
 	"port": 9000,
 	"path": "/signaling",
 	"statsInterval": 10000,
 
 	"ipLimit": 10,
 	"concurrentLimit": null,
-	"key": "",
+	"key": "reepio",
     "ssl": false
 }
