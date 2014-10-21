@@ -10,9 +10,8 @@ var peer = require('peer'),
 
 loader.load('peering-server.json')
 	.done(function (config) {
-        var numConnections, concurrentLimit;
-        numConnections = 0;
-        concurrentLimit = config.concurrentLimit === null ? Number.MAX_VALUE : config.concurrentLimit;
+		var numConnections = 0,
+			concurrentLimit = config.concurrentLimit === null ? Number.MAX_VALUE : config.concurrentLimit;
 
         var opts = {
             port: config.port,
