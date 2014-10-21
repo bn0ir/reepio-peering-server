@@ -13,7 +13,6 @@
 		writeFile = Q.denodeify(fs.writeFile);
 
 	var config = function(env){
-        console.log(env);
 		this.env = env || 'dev';
 		this.configPath = path.resolve(__dirname, '../config', this.env);
 	};
