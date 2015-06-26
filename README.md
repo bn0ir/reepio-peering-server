@@ -5,12 +5,11 @@ This WebRTC is used to connect WebRTC clients for [https://reep.io](https://reep
 What is reep.io?
 ---
 reep.io uses WebRTC technology to enable peer-to-peer file transfers between two browser without any server interaction. 
-This repository holds the sources to run the reep.io frontend.  
-**You will need a ICE and Peering server to run this project.** You can find the reep.io peering server [here](https://github.com/KodeKraftwerk/reepio-peering-server)
+This repository holds the sources to run the reep.io peering server.  
 
 Configuration
 ---
-You can set some options in the config/<env>/peering-server.js (if it does not exist, copy the peering-server.dist.js)
+You can set some options in the config/<env>/peering-server.json (if it does not exist, copy the peering-server.dist.json)
 
 Installation
 ---
