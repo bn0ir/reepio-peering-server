@@ -7,7 +7,6 @@ var peer = require('peer'),
 	loader = require('./config'),
 	logger = require('./logger'),
     fs = require('fs');
-
 loader.load('peering-server.json')
 	.done(function (config) {
 		var numConnections = 0,

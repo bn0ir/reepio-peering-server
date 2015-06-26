@@ -1,6 +1,0 @@
-#!/usr/bin/env node
-
-var path = require('path'),
-	cli = require('cli');
-
-require(path.resolve(__dirname, '../src/server.js'));

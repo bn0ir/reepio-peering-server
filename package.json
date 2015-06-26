@@ -1,29 +1,30 @@
 {
-  "name": "reepio-peering-server",
-  "version": "0.0.0-4",
-  "description": "",
-  "main": "server.js",
-  "dependencies": {
-    "peer": "~0.2.5",
-    "socket.io": "~0.9.17",
-    "q": "^1.0.1",
-    "winston": "^0.7.3",
-    "cli": "^0.6.3",
-    "daemon": "^1.1.0"
-  },
-  "scripts": {
-    "test": "node node_modules/mocha/bin/mocha test",
-    "start": "node src/server.js"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "chai": "^1.10.0",
-    "chai-as-promised": "^4.1.1",
-    "mocha": "^2.0.1"
-  },
-  "subdomain": "kodekraftwerk-webrtc",
-  "engines": {
-    "node": "0.10.x"
-  }
+    "name": "reepio-peering-server",
+    "version": "0.0.2",
+    "description": "WebRTC peering server used for reep.io",
+    "main": "src/server.js",
+    "dependencies": {
+        "peer": "~0.2.5",
+        "socket.io": "~0.9.17",
+        "q": "^1.0.1",
+        "winston": "^0.7.3",
+        "cli": "^0.6.3",
+        "daemon": "^1.1.0"
+    },
+    "scripts": {
+        "postinstall": "cp -n config/dev/logging.dist.json config/dev/logging.json && cp -n config/dev/peering-server.dist.json config/dev/peering-server.json",
+        "test": "node node_modules/mocha/bin/mocha test",
+        "start": "node src/server.js"
+    },
+    "author": "https://github.com/kodekraftwerk",
+    "license": "GPL-2.0",
+    "repository": "https://github.com/KodeKraftwerk/reepio-peering-server.git",
+    "devDependencies": {
+        "chai": "^1.10.0",
+        "chai-as-promised": "^4.1.1",
+        "mocha": "^2.0.1"
+    },
+    "engines": {
+        "node": "0.12.x"
+    }
 }
